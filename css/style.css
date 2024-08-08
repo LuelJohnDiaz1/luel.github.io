@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --bg-color: #222831;
+    --text-color: #EEEEEE;
+    --main-color: #a679ff;
+    --accent-color: #ff4bbe;
+    --gradient-text-color: linear-gradient(133deg, rgba(50,93,135,1) 0%, rgba(50,93,135,1) 0%, rgba(212,210,82,1) 100%);
+ 
+}
+
+
+body {
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    padding: 28px 12%;
+    transition: all 0.50s ease;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    color: var(--main-color);
+    font-size:  28px;
+    margin-right: 7px;
+}
+
+.logo span {
+    font-size: 1.9rem;
+    font-weight: 800;
+    background: var(--gradient-text-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all 0.50s ease;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+.navbar a.active {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 1.5rem;
+    background-color: var(--main-color);
+}
+
+.navbar a.active:hover {
+    color: var(--text-color);
+    transition: all 0.50s ease;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+.main a {
+    margin-left: 25px;
+    margin-right: 10px;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.50s ease;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user i {
+    color: var(--main-color);
+    font-size: 20px;
+    margin-right: 7px;
+
+}
+
+.main a:hover {
+    color: var(--main-color);
+    transition: all 0.50s ease;
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+@media (max-width: 1280px) {
+    
+    header {
+        padding: 14px 2%;
+        transition: .2s;
+    }
+    
+    .navbar a {
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 1090px) {
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -200%;
+        width: 250px;
+        height: 35vh 100%;
+        background-color: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all 0.5s ease;
+        padding-top: 20px;
+        padding-left: 10px;
+        display: block;
+        margin: 12px, 0;
+    }
+
+    .navbar a:hover {
+        color: var(--bg-color);
+        transform: translateY(5px);
+    }
+    
+    .navbar a.active {
+        border-radius: 1.5rem;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: var(--text-color);
+        color: var(--main-color);
+        padding: 7px;
+  
+    }
+
+    .navbar a.active:hover {
+        color: var(--main-color);
+        transition: all 0.50s ease;
+    }
+
+    .navbar li {
+        margin-bottom: 10px;
+    }
+
+    .navbar.open {
+        margin-right: 20px;
+        right: 2px;
+    }
+
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: var(--text-color);
+    padding: 50px 12%;
+    text-align: start; /* center */
+}
+
+#home .content {
+    max-width: 800px;
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+#home .my-name {
+    font-weight: 800;
+    color: var(--accent-color);
+}
+
+#home p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.text-highlight {
+    font-weight: 800;
+    color: var(--main-color);
+}
