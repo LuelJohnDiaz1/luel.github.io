@@ -12,7 +12,7 @@
     --text-color: #EEEEEE;
     --main-color: #a679ff;
     --accent-color: #ff4bbe;
-    --gradient-text-color: linear-gradient(133deg, rgba(50,93,135,1) 0%, rgba(50,93,135,1) 0%, rgba(212,210,82,1) 100%);
+    --gradient-color: linear-gradient(to right, #ff4bbe, #a679ff);
  
 }
 
@@ -21,9 +21,18 @@ html {
 }
 
 body {
-    min-height: 100vh;
+    min-height: 80vh;
     background: var(--bg-color);
     color: var(--text-color);
+}
+
+.seperator {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, #ff4bbe, #a679ff);
+    margin-left: 40%;
+    margin-right: 40%;
+   
 }
 
 header {
@@ -54,7 +63,7 @@ header {
 .logo span {
     font-size: 1.9rem;
     font-weight: 800;
-    background: var(--gradient-text-color);
+    background: var(--gradient-color);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -202,11 +211,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 80vh;
     color: var(--text-color);
     padding: 50px 12%;
     padding-top: 100px;
-    text-align: start; /* center */
+    text-align: center; /* center */
 }
 
 #home .content {
@@ -244,6 +253,7 @@ header {
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
+    justify-content: center;
     gap: 2rem;
     font-size: 2rem;
 }
@@ -270,4 +280,45 @@ header {
     background: var(--text-color);
     transition: all .5s ease;
     cursor: pointer;
+}
+
+
+/* Profile Section */
+#profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    padding: 50px 12%;
+    text-align: center; /* center */
+}
+
+#profile h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+#profile p {
+    font-size: 1.2rem;
+}
+
+#profile .tech-stacks {
+    margin-top: 20px;
+}
+
+#profile ul {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+#profile li {
+    font-size: 1.1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 1.5rem;
+    background-color: var(--accent-color);
 }
