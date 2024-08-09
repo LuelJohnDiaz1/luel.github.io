@@ -16,6 +16,9 @@
  
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     min-height: 100vh;
@@ -202,6 +205,7 @@ header {
     min-height: 100vh;
     color: var(--text-color);
     padding: 50px 12%;
+    padding-top: 100px;
     text-align: start; /* center */
 }
 
@@ -225,7 +229,45 @@ header {
     line-height: 1.6;
 }
 
+#home img {
+    border-radius: 50%;
+    max-width: 150px;
+    max-height: 150px;
+}
+
 .text-highlight {
     font-weight: 800;
     color: var(--main-color);
+}
+
+.contacts {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+.contacts i {
+    color: var(--main-color);
+}
+
+.contacts i:hover {
+    color: var(--text-color);
+    transition: all .5s ease;
+}
+
+.resume {
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 1.5rem;
+    background: var(--main-color);
+    font-size: 1rem;
+}
+
+.resume:hover {
+    color: var(--main-color);
+    background: var(--text-color);
+    transition: all .5s ease;
+    cursor: pointer;
 }
