@@ -211,7 +211,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 80vh;
+    min-height: 100vh;
     color: var(--text-color);
     padding: 50px 12%;
     padding-top: 100px;
@@ -296,6 +296,7 @@ header {
     padding: 50px 12%;
     padding-top: 0px;
     text-align: center;
+    min-height: 100vh;
     /* center */
 }
 
