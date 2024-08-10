@@ -32,7 +32,7 @@ hr {
     background: linear-gradient(to right, #ff4bbe, #a679ff);
     margin-left: 40%;
     margin-right: 40%;
-
+    margin-bottom: 20px;
 }
 
 header {
@@ -293,8 +293,7 @@ header {
     align-items: center;
     justify-content: center;
     color: var(--text-color);
-    padding: 50px 12%;
-    padding-top: 0px;
+    padding: 100px 12%;
     text-align: center;
     min-height: 100vh;
     /* center */
