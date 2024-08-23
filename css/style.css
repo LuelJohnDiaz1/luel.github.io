@@ -456,7 +456,7 @@ header {
         padding: 0;
     }
 
-    #experiences p {
+    #experiences .experience-desc {
         padding-left: 50px;
         padding-right: 50px;
     }
