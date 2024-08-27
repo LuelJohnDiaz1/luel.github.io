@@ -402,10 +402,13 @@ header {
 
 .text-box {
     text-align: left;
+    padding-right: 10px;
 }
 
-.text-box h2 {
+.text-box h2, .text-box button {
     color: var(--main-color);
+    font-size: small;
+    font-weight: bold;
 }
 
 .text-box h3 {
@@ -419,6 +422,7 @@ header {
 
 .text-box p {
     font-size: small;
+    
 }
 
 .left-container-arrow {
@@ -446,6 +450,35 @@ header {
     left: -15px;
 
 }
+
+.collapsible {
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+  }
+  
+  .collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+.collapsible:after {
+    content: '\002B';
+    color: var(--text-color);
+    font-weight: small;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
 
 @media (max-width: 600px) {
     .column {
@@ -476,23 +509,12 @@ header {
         padding-right: 25px;
     }
 
-    .text-box {
-        font-size: 13px;
-    }
 
-    .text-box h2 {
-        font-size: smaller;
-    }
-
-    .text-box h3 {
-        font-size: smaller;
-    }
-
-    .text-box p {
-        font-size: smaller;
-    }
-
-    .text-box small {
+    .text-box h2,
+    .text-box h3,
+    .text-box p,
+    .text-box small,
+    .text-box button {
         font-size: smaller;
     }
 
