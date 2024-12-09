@@ -565,13 +565,6 @@ header {
     margin-bottom: 20px;
 }
 
-#projects .content {
-    text-align: center;
-    margin: 0 auto;
-    /* color: white; */
-    padding: 20px;
-}
-
 .project-cards {
     display: flex;
     flex-wrap: wrap;
@@ -653,7 +646,7 @@ header {
     .project-card {
         flex-direction: column-reverse;
         text-align: center;
-        width: auto;
+        width: 100%;
     }
 
     .project-description {
