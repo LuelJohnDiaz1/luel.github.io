@@ -1,172 +1,275 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="ut8-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Luel John Diaz</title>
 
-        <!-- ICONS -->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<head>
+    <meta charset="ut8-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luel John Diaz</title>
 
-        <!-- FONTS -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-    </head>
+    <!-- ICONS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-    <body>
-        <!-- Header -->
-        <header>
-            <a href="#" class="logo"><i class=""></i><span>&lt;<span class="logo-title">Luel</span>&gt;</span></a> 
-            <ul class="navbar">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#experiences">Experiences</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#">Testimonials</a></li>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Swipper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo"><i class=""></i><span>&lt;<span class="logo-title">Luel</span>&gt;</span></a>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#">Testimonials</a></li>
+        </ul>
+
+        <div class="main">
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="content">
+            <img src="assets/picture.png">
+            <h1>Hey! I'm <span class="my-name">Luel</span></h1>
+            <p>I'm a <span class="text-highlight">passionate developer</span>. This page showcases my work and
+                experiences. Feel free to explore.</p>
+
+            <ul class="contacts">
+                <li><a href="https://github.com/LuelJohnDiaz1"><i class="ri-github-fill"></i></i></a></li>
+                <li><a href="https://www.facebook.com/lueljohn.diaz/"><i class="ri-facebook-circle-fill"></i></a></li>
+                <li>
+                    <a href="mailto:lueljohndiaz@gmail.com">
+                        <i class="ri-mail-fill" title="Send an email to lueljohndiaz@gmail.com"></i>
+                    </a>
+                </li>
+
             </ul>
 
-            <div class="main">
-                <div class="bx bx-menu" id="menu-icon"></div>
+            <a class="resume" type="button">Resume</a>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <div class="content">
+            <h1>Profile</h1>
+            <hr>
+            <div class="row">
+                <div class="column">
+                    <h3 class="about">About me</h3>
+                    <p>I am a developer with a focus on creating applications using ASP.NET for backend solutions. I
+                        specialize in both Windows Forms and web development, and have experience in delivering robust
+                        and dynamic applications.</p>
+                </div>
+                <div class="column">
+                    <h3 class="tech-stacks">Tech stacks</h3>
+                    <ul>
+                        <li class="box">
+                            <img src="assets/c-sharp.svg">C#
+                        </li>
+                        <li class="box">
+                            <img src="assets/vb.svg">VB.Net
+                        </li>
+                        <li class="box">
+                            <img src="assets/asp.svg">ASP.Net
+                        </li>
+                        <li class="box">
+                            <img src="assets/sql.svg">SQL Server
+                        </li>
+                        <li class="box">
+                            <img src="assets/angular.svg">Angular
+                        </li>
+                        <li class="box">
+                            <img src="assets/jquery.svg">jQuery
+                        </li>
+                        <li class="box">
+                            <img src="assets/html.svg">HTML
+                        </li>
+                        <li class="box">
+                            <img src="assets/css.svg">CSS
+                        </li>
+                        <li class="box">
+                            <img src="assets/bootstrap.svg">Bootstrap
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </header>
 
-        <!-- Home Section -->
-        <section id="home">
-            <div class="content">
-                <img src="assets/picture.png">
-                <h1>Hey! I'm <span class="my-name">Luel</span></h1>
-                <p>I'm a <span class="text-highlight">passionate developer</span>. This page showcases my work and experiences. Feel free to explore.</p>
+        </div>
 
-                <ul class="contacts">
-                    <li><a href="#"><i class="ri-github-fill"></i></i></a></li>
-                    <li><a href="#"><i class="ri-facebook-circle-fill"></i></a></li>
-                    <li><a href="#"><i class="ri-mail-fill"></i></a></li>
-                </ul>
+    </section>
 
-                <a class="resume" type="button">Resume</a>
-            </div>
-        </section>
-
-        <!-- Profile Section -->
-        <section id="profile">
-            <div class="content">
-                <hr>
-                <h1>Profile</h1>
-                <div class="row">
-                    <div class="column">
-                        <h3 class="about">About me</h3>
-                        <p>I am a developer with a focus on creating applications using ASP.NET for backend solutions. I specialize in both Windows Forms and web development, and have experience in delivering robust and dynamic applications.</p>
-                    </div>
-                    <div class="column">
-                        <h3 class="tech-stacks">Tech stacks</h3>
-                        <ul>
-                            <li class="box">
-                                <img src="assets/c-sharp.svg">C#
-                            </li>
-                            <li class="box">
-                                <img src="assets/vb.svg">VB.Net
-                            </li>
-                            <li class="box">
-                                <img src="assets/asp.svg">ASP.Net
-                            </li>
-                            <li class="box">
-                                <img src="assets/sql.svg">SQL Server
-                            </li>
-                            <li class="box">
-                                <img src="assets/angular.svg">Angular
-                            </li>
-                            <li class="box">
-                                <img src="assets/jquery.svg">jQuery
-                            </li>
-                            <li class="box">
-                                <img src="assets/html.svg">HTML
-                            </li>
-                            <li class="box">
-                                <img src="assets/css.svg">CSS
-                            </li>
-                            <li class="box">
-                                <img src="assets/bootstrap.svg">Bootstrap
-                            </li>
-                        </ul>
+    <!-- Experiences -->
+    <section id="experiences">
+        <div class="content">
+            <h1>Experiences</h1>
+            <hr>
+            <p class="experience-desc">In my work experience, I’ve consistently delivered high-quality results by
+                understanding complex technical challenges and turning ideas into real solutions.</p>
+            <div class="timeline">
+                <div class="container left-container">
+                    <i class="ri-circle-fill"></i>
+                    <div class="text-box">
+                        <small>September 2022 - (Present)</small>
+                        <h3>
+                            <ul>I.T Programmer
+                        </h3>
+                        <button class="collapsible">Statefields School Incorporated</button>
+                        <div class="collapsible-content">
+                            <p>I upgraded and modified the school management system through analysis, testing,
+                                debugging,
+                                and implementation; developed
+                                and maintained software for departments; conducted system tests and employee training;
+                                and handled other IT-related
+                                tasks as needed.</p>
+                        </div>
+                        <span class="left-container-arrow"></span>
                     </div>
                 </div>
-                
-            </div>
-            
-        </section>
-        
-        <!-- Experiences -->
-        <section id="experiences">
-            <div class="content">
-                <hr>
-                <h1>Experiences</h1>
-                <p class="experience-desc">In my work experience, I’ve consistently delivered high-quality results by understanding complex technical challenges and turning ideas into real solutions.</p>
-                <div class="timeline">
-                    <div class="container left-container">
-                        <i class="ri-circle-fill"></i>
-                        <div class="text-box">
-                            <small>September 2022 - (Present)</small>
-                            <h3><ul>I.T Programmer</h3>
-                            <button class="collapsible">Statefields School Incorporated</button>
-                            <div class="collapsible-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                            <span class="left-container-arrow"></span>
+                <div class="container right-container">
+                    <i class="ri-circle-fill"></i>
+                    <div class="text-box">
+                        <small>June 2018 - September 2022</small>
+                        <h3>System Programmer / I.T Hardware</h3>
+                        <button class="collapsible">Philippine Interactive Auditext Services Inc.</button>
+                        <div class="collapsible-content">
+                            <p>I worked on developing and maintaining in-house software, ensuring systems were
+                                up-to-date and running smoothly. I managed software across networks, took care of tech
+                                equipment, and handled projects like an inventory system and VISA processing for the
+                                Italian Embassy</p>
                         </div>
+                        <span class="right-container-arrow"></span>
                     </div>
-                    <div class="container right-container">
-                        <i class="ri-circle-fill"></i>
-                        <div class="text-box">
-                            <small>June 2018 - September 2022</small>
-                            <h3>System Programmer / I.T Hardware</h3>
-                            <button class="collapsible">Philippine Interactive Auditext Services Inc.</button>
-                            <div class="collapsible-content">
-                                <p>I worked on developing and maintaining in-house software, ensuring systems were up-to-date and running smoothly. I managed software across networks, took care of tech equipment, and handled projects like an inventory system and VISA processing for the Italian Embassy</p>
-                            </div>
-                            <span class="right-container-arrow"></span>
-                        </div>
-                    </div>
-                    <div class="container left-container">
-                        <i class="ri-circle-fill"></i>
-                        <div class="text-box">
-                            <small>May 2015 - March 2018</small>
-                            <h3>System Programmer</h3>
-                            <button class="collapsible">Innovative Thinker Software Solutions</button>
-                            <div class="collapsible-content">
-                                <p>I developed, modified, and maintained assigned programs, reviewed user requirements for new software, and handled analysis, design, and installation of software. I resolved problems through fact-finding and analysis, performed system updates to ensure optimal performance, provided technical support, and assisted in selecting hardware and software. I worked on complex programs, supervised technical staff, and maintained confidentiality. Notable projects included an integrated accounting system for water district companies, a monitoring and evaluation system with GIS, and a hospitality property management and accounting system with billing and collection modules. </p>
-                            </div>
-                            <span class="left-container-arrow"></span>
-                        </div>
-                    </div>
-                    <div class="container right-container">
-                        <i class="ri-circle-fill"></i>
-                        <div class="text-box">
-                            <small>June 2014 - November 2018</small>
-                            <h3>System Development Staff</h3>
-                            <button class="collapsible">House Research Development (Singapore) Pte. Ltd.</button>
-                            <div class="collapsible-content">
-                                <p>I was responsible for system debugging, adding and modifying system functions, resolving user issues, and performing server backups.</p>
-                            </div>
-                            <span class="right-container-arrow"></span>
-                        </div>
-                    </div>
-                    <div></div>
                 </div>
-                
+                <div class="container left-container">
+                    <i class="ri-circle-fill"></i>
+                    <div class="text-box">
+                        <small>May 2015 - March 2018</small>
+                        <h3>System Programmer</h3>
+                        <button class="collapsible">Innovative Thinker Software Solutions</button>
+                        <div class="collapsible-content">
+                            <p>I developed, modified, and maintained assigned programs, reviewed user requirements for
+                                new software, and handled analysis, design, and installation of software. I resolved
+                                problems through fact-finding and analysis, performed system updates to ensure optimal
+                                performance, provided technical support, and assisted in selecting hardware and
+                                software. I worked on complex programs, supervised technical staff, and maintained
+                                confidentiality. Notable projects included an integrated accounting system for water
+                                district companies, a monitoring and evaluation system with GIS, and a hospitality
+                                property management and accounting system with billing and collection modules. </p>
+                        </div>
+                        <span class="left-container-arrow"></span>
+                    </div>
+                </div>
+                <div class="container right-container">
+                    <i class="ri-circle-fill"></i>
+                    <div class="text-box">
+                        <small>June 2014 - November 2018</small>
+                        <h3>System Development Staff</h3>
+                        <button class="collapsible">House Research Development (Singapore) Pte. Ltd.</button>
+                        <div class="collapsible-content">
+                            <p>I was responsible for system debugging, adding and modifying system functions, resolving
+                                user issues, and performing server backups.</p>
+                        </div>
+                        <span class="right-container-arrow"></span>
+                    </div>
+                </div>
+                <div></div>
             </div>
-        </section>
 
-        <section id="projects">
-             <div class="content">
-                <hr>
-               <!-- <h1>Some of my projects handled</h1> -->
-             </div>
-        </section>
-        <!--js-link-->
-        <script type="text/javascript" src="js/script.js"></script>
-    </body>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="content">
+            <h1>Projects</h1>
+            <hr>
+            <p>Here is a selection of the projects I’ve worked on.</p>
+            <div class="project-cards">
+                <div class="project-card">
+                    <div class="project-description">
+                        <h2>School Parent Portal</h2>
+                        <p>The School Parent Portal allows parents to easily enroll and admit new students, make online
+                            payments for tuition and
+                            fees, and view academic progress, including scores, grades, and certificates.</p>
+
+                        <div class="project-tech-stacks">
+                            <li>ASP.Net</li>
+                            <li>C#</pli>
+                            <li>Bootstrap</li>
+                            <li>SQL Server</li>
+                            <li>Crystal Reports</li>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <swiper-container class="mySwiper" pagination="true">
+                            <swiper-slide>
+                                <div>
+                                    <img src="assets/parent-portal/parent-portal-1.png">
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div>
+                                    <img src="assets/parent-portal/parent-portal-2.png">
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div>
+                                    <img src="assets/parent-portal/parent-portal-3.png">
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div>
+                                    <img src="assets/parent-portal/parent-portal-4.png">
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <div>
+                                    <img src="assets/parent-portal/parent-portal-5.png">
+                                </div>
+                            </swiper-slide>
+
+
+                        </swiper-container>
+
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-description">
+                        <h2>Official website of Qo'qon</h2>
+                        <p>Official website of Qo'qon.</p>
+                        <a href="" class="project-link">Visit website →</a>
+                    </div>
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/150" alt="Qo'qon Website">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <!--js-link-->
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
 </html>

@@ -10,10 +10,10 @@
 :root {
     --bg-color: #222831;
     --text-color: #EEEEEE;
-    --main-color: #a679ff;
-    --accent-color: #ff4bbe;
-    --gradient-color: linear-gradient(to right, #ff4bbe, #a679ff);
-
+    --main-color: #0E6CC2;
+    --accent-color: #ff4576;
+    --gradient-color: linear-gradient(to right, var(--accent-color), var(--main-color));
+    --hover-color: #444;
 }
 
 html {
@@ -25,6 +25,26 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
     overflow-x: hidden;
+}
+
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 hr {
@@ -215,7 +235,8 @@ header {
 
 #home,
 #profile,
-#experiences {
+#experiences,
+#projects {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -228,7 +249,8 @@ header {
 }
 
 #profile h1,
-#experiences h1 {
+#experiences h1,
+#projects h1 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: var(--accent-color);
@@ -306,12 +328,12 @@ header {
 /* Profile Section */
 #profile p {
     font-size: 1.2rem;
-    text-align: center;
+    text-align: left;
 }
 
 #profile h3 {
     color: var(--main-color);
-    text-align: center;
+    text-align: left;
     font-size: 1.2rem;
     margin-top: 20px;
     margin-bottom: 5px;
@@ -320,7 +342,7 @@ header {
 #profile ul {
     padding-bottom: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     /* Allow wrapping to next line */
     flex-wrap: wrap;
     gap: 1rem;
@@ -333,7 +355,6 @@ header {
     gap: .5rem;
     justify-content: center;
     align-items: center;
-    /*box-shadow: 0 4px 8px var(--accent-color);*/
     font-size: 1rem;
     text-align: center;
     padding-left: 5px;
@@ -405,7 +426,8 @@ header {
     padding-right: 10px;
 }
 
-.text-box h2, .text-box button {
+.text-box h2,
+.text-box button {
     color: var(--main-color);
     font-size: small;
     font-weight: bold;
@@ -422,7 +444,7 @@ header {
 
 .text-box p {
     font-size: small;
-    
+
 }
 
 .left-container-arrow {
@@ -459,28 +481,28 @@ header {
     border: none;
     text-align: left;
     outline: none;
-  }
-  
-  .collapsible-content {
+}
+
+.collapsible-content {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-  }
-  
+}
+
 .collapsible:after {
     content: '\002B';
     color: var(--text-color);
     font-weight: small;
     float: right;
     margin-left: 5px;
-  }
-  
-  .active:after {
-    content: "\2212";
-  }
-  
+}
 
-@media (max-width: 600px) {
+.active:after {
+    content: "\2212";
+}
+
+
+@media (max-width: 1090px) {
     .column {
         width: 100%;
     }
@@ -536,5 +558,122 @@ header {
         border-right: 15px solid var(--text-color);
         border-left: 0;
         left: -15px;
+    }
+}
+
+#projects p {
+    margin-bottom: 20px;
+}
+
+#projects .content {
+    text-align: center;
+    margin: 0 auto;
+    /* color: white; */
+    padding: 20px;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.project-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    /* transition: transform 0.3s ease, background-color 0.3s; */
+    text-align: left;
+}
+
+.project-card:hover {
+    background-color: var(--hover-color);
+}
+
+.project-description {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.project-description h2 {
+    color: var(--text-color);
+}
+
+.project-description p {
+    text-align: left;
+    font-size: small;
+}
+
+.project-image swiper-container {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: small;
+}
+
+.project-link:hover {
+    background-color: #0056b3;
+}
+
+.project-tech-stacks {
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+    flex-wrap: wrap;
+
+}
+
+.project-tech-stacks li {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    background: var(--accent-color);
+    font-size: small;
+}
+
+@media (max-width: 1090px) {
+    .project-card {
+        flex-direction: column-reverse;
+        text-align: center;
+        width: auto;
+    }
+
+    .project-description {
+        padding-right: 0;
+        padding-bottom: 15px;
+    }
+
+    .project-description h2 {
+        text-align: left;
+    }
+
+    .project-image img {
+        width: 100%;
+        max-width: 500px;
+        margin-top: 15px;
+    }
+
+    swiper-container {
+        width: 100%;
+        max-width: 500px;
+        margin-top: 15px;
     }
 }
