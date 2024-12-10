@@ -9,6 +9,7 @@
 
 :root {
     --bg-color: #222831;
+    --bg-color2: #333;
     --text-color: #EEEEEE;
     --main-color: #0E6CC2;
     --accent-color: #ff4576;
@@ -556,18 +557,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #333;
-    color: white;
+    background: var(--bg-color2);
     padding: 20px;
     border-radius: 10px;
     width: 100%;
     max-width: 800px;
     /* transition: transform 0.3s ease, background-color 0.3s; */
     text-align: left;
-}
-
-.project-card:hover {
-    background-color: var(--hover-color);
 }
 
 .project-description {
@@ -595,10 +591,6 @@ header {
     font-size: small;
 }
 
-.project-link:hover {
-    background-color: #0056b3;
-}
-
 .project-tech-stacks {
     display: flex;
     gap: 10px;
@@ -616,8 +608,9 @@ header {
 
 .project-image img {
     object-fit: contain;
-    max-width: 300px;
-    height: auto;
+    max-width: 400px;
+    min-height: 400px;
+    /* height: auto; */
     margin-top: 15px;
 }
 
@@ -638,10 +631,11 @@ swiper-slide {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 18px;
+    /* border-radius: 8px; */
     font-size: 22px;
     font-weight: bold;
-    color: #fff;
+    background-color: var(--hover-color);
+
 }
 
 
@@ -664,8 +658,8 @@ swiper-slide {
 
     .project-image img {
         max-width: 100%;
+        min-height: 300px;
         height: auto;
-        object-fit: contain;
     }
 
     swiper-container {
