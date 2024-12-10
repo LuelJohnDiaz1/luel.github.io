@@ -27,26 +27,6 @@ body {
     overflow-x: hidden;
 }
 
-
-swiper-container {
-    width: 100%;
-    height: 100%;
-}
-
-swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 hr {
     border: none;
     height: 1px;
@@ -604,13 +584,6 @@ header {
     font-size: small;
 }
 
-.project-image swiper-container {
-    width: 400px;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-}
-
 .project-link {
     display: inline-block;
     margin-top: 15px;
@@ -631,7 +604,21 @@ header {
     gap: 10px;
     justify-content: left;
     flex-wrap: wrap;
+}
 
+.project-image {
+    width: 100%;
+    /* Make it responsive */
+    max-width: 1200px;
+    /* Optional: limit the maximum width */
+    margin: auto;
+}
+
+.project-image img {
+    object-fit: contain;
+    max-width: 300px;
+    height: auto;
+    margin-top: 15px;
 }
 
 .project-tech-stacks li {
@@ -641,6 +628,23 @@ header {
     background: var(--accent-color);
     font-size: small;
 }
+
+swiper-container {
+    width: 400px;
+    height: auto;
+}
+
+swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
 
 @media (max-width: 1090px) {
     .project-card {
@@ -659,14 +663,13 @@ header {
     }
 
     .project-image img {
-        width: 100%;
-        max-width: 500px;
-        margin-top: 15px;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
     }
 
     swiper-container {
-        width: 100%;
-        max-width: 500px;
-        margin-top: 15px;
+        max-width: 300px;
+        height: auto;
     }
 }
