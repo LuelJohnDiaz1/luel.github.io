@@ -34,3 +34,9 @@ for (i = 0; i < coll.length; i++) {
   });
 
 }
+
+// Initialize animate on scroll
+AOS.init({
+  duration: 1200,
+  once: false, // Trigger animation only once when scrolling
+})
