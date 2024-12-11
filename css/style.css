@@ -313,7 +313,7 @@ header {
 }
 
 #profile h3 {
-    color: var(--main-color);
+    color: var(--text-color);
     text-align: left;
     font-size: 1.2rem;
     margin-top: 20px;
@@ -561,7 +561,7 @@ header {
     padding: 20px;
     border-radius: 10px;
     width: 100%;
-    max-width: 800px;
+    /* max-width: 800px; */
     /* transition: transform 0.3s ease, background-color 0.3s; */
     text-align: left;
 }
@@ -608,9 +608,9 @@ header {
 
 .project-image img {
     object-fit: contain;
-    max-width: 400px;
-    min-height: 400px;
-    /* height: auto; */
+    max-width: 500px;
+    min-height: 500px;
+    height: auto;
     margin-top: 15px;
 }
 
@@ -623,7 +623,7 @@ header {
 }
 
 swiper-container {
-    width: 400px;
+    width: 500px;
     height: auto;
 }
 
